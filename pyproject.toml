@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "backend-takehome-problem"
+version = "0.1.0"
+description = "Fetch and filter research papers from PubMed"
+authors = ["Your Name"]
+packages = [{include = "backend_takehome_problem"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+
+[tool.poetry.scripts]
+get-papers-list = "backend_takehome_problem.cli:main"
